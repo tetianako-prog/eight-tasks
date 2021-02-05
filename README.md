@@ -1,2 +1,2 @@
 # eight-tasks
-Coding practice, solving java script tasks
+Coding practice, solving JavaScript tasks
