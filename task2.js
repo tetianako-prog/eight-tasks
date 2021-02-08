@@ -1,13 +1,12 @@
 function moveZeros(arr) {
   const newArr = [];
+  const zerosArr = [];
   arr.forEach(item => {
     if (item !== 0) {
       newArr.push(item);
+    } else {
+      zerosArr.push(item);
     }
   });
-  const zeroesQuantity = arr.length - newArr.length;
-  for (let i = 0; i < zeroesQuantity; i += 1) {
-    newArr.push(0);
-  }
-  return newArr;
+  return newArr.concat(zerosArr);
 }
